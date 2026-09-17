@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pyShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pyBlue3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/><stop offset="50%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="pyYellow3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/><stop offset="50%" stop-color="#EAB308"/><stop offset="100%" stop-color="#CA8A04"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="102" rx="42" ry="10" fill="url(#pyShadow)"/>
+  <!-- Blue 3D Snake Top -->
+  <g filter="drop-shadow(0 6px 8px rgba(0,0,0,0.25))">
+    <path d="M 58 18 C 40 18 32 26 32 36 L 32 44 L 58 44 L 58 48 L 26 48 C 18 48 14 54 14 64 C 14 74 20 80 32 80 L 38 80 L 38 70 C 38 60 46 52 58 52 L 84 52 C 92 52 96 46 96 36 C 96 26 90 18 78 18 Z" fill="url(#pyBlue3D)"/>
+    <circle cx="42" cy="28" r="3.5" fill="#FFFFFF"/>
+    <path d="M 42 20 C 54 20 72 20 76 26" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Yellow 3D Snake Bottom -->
+  <g filter="drop-shadow(0 6px 10px rgba(0,0,0,0.25))">
+    <path d="M 62 96 C 80 96 88 88 88 78 L 88 70 L 62 70 L 62 66 L 94 66 C 102 66 106 60 106 50 C 106 40 100 34 88 34 L 82 34 L 82 44 C 82 54 74 62 62 62 L 36 62 C 28 62 24 68 24 78 C 24 88 30 96 42 96 Z" fill="url(#pyYellow3D)"/>
+    <circle cx="78" cy="86" r="3.5" fill="#0F172A"/>
+  </g>
+</svg>

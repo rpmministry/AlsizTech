@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&amp;family=Inter:wght@700;800;900&amp;display=swap');
+      .title-dark { font-family: 'Montserrat', sans-serif; font-size: 34px; fill: #FFFFFF; }
+      .bold { font-weight: 700; }
+      .light { font-weight: 400; }
+      .subtitle-dark { font-family: 'Inter', sans-serif; font-size: 13.5px; font-weight: 800; fill: #FFFFFF; letter-spacing: 0.22em; }
+    </style>
+    <linearGradient id="gradHorizOscuro" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="45%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+  <!-- Isotipo horizontal -->
+  <path d="M 18 54 L 42 14 L 66 54" fill="none" stroke="url(#gradHorizOscuro)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Tipografía alineada horizontalmente en blanco puro -->
+  <text x="88" y="38" class="title-dark"><tspan class="bold">Alsiz</tspan><tspan class="light">Tech</tspan></text>
+  <text x="90" y="58" class="subtitle-dark">AGENCIA DIGITAL</text>
+</svg>
+

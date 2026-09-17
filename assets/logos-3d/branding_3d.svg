@@ -1,0 +1,42 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Branding y Experiencia Digital 3D">
+  <defs>
+    <filter id="brandShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="cubeTopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="cubeLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="cubeRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sombra de Suelo -->
+  <ellipse cx="50" cy="88" rx="34" ry="7" fill="#0F172A" opacity="0.3"/>
+
+  <!-- Cubo Isométrico 3D (Cara Superior) -->
+  <polygon points="50,18 78,33 50,48 22,33" fill="url(#cubeTopGrad)" filter="url(#brandShadow)"/>
+  <polygon points="50,18 78,33 50,48 22,33" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" fill="none"/>
+
+  <!-- Cubo Isométrico 3D (Cara Izquierda) -->
+  <polygon points="22,33 50,48 50,78 22,63" fill="url(#cubeLeftGrad)"/>
+  <polygon points="22,33 50,48 50,78 22,63" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/>
+
+  <!-- Cubo Isométrico 3D (Cara Derecha) -->
+  <polygon points="50,48 78,33 78,63 50,78" fill="url(#cubeRightGrad)"/>
+  <polygon points="50,48 78,33 78,63 50,78" stroke="rgba(255,255,255,0.2)" stroke-width="1" fill="none"/>
+
+  <!-- Símbolo de Identidad en Cara Superior (Monograma o Isotipo en relieve) -->
+  <path d="M 44 38 L 50 26 L 56 38" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Pincel / Pluma de Diseño Flotante con Destello -->
+  <circle cx="80" cy="22" r="4" fill="#F59E0B"/>
+  <path d="M 78 24 L 66 36" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+

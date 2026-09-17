@@ -1,0 +1,58 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ingeniería de Audio y Voicemeeter 3D">
+  <defs>
+    <filter id="audioShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="audioBaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="faderGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="faderGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sombra de Suelo -->
+  <ellipse cx="50" cy="88" rx="34" ry="7" fill="#0F172A" opacity="0.3"/>
+
+  <!-- Consola Base 3D (Capa Inferior de Extrusión) -->
+  <rect x="16" y="24" width="68" height="58" rx="8" fill="#0B132B"/>
+
+  <!-- Consola Frontal con Relieve y Textura -->
+  <rect x="16" y="20" width="68" height="58" rx="8" fill="url(#audioBaseGrad)" filter="url(#audioShadow)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Brillo Superior -->
+  <line x1="20" y1="21" x2="80" y2="21" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Ranura 1 (Pista Izquierda) -->
+  <rect x="28" y="32" width="6" height="34" rx="3" fill="#090D16"/>
+  <!-- Perilla / Fader 1 3D -->
+  <rect x="25" y="44" width="12" height="12" rx="3" fill="url(#faderGrad1)"/>
+  <rect x="26" y="49" width="10" height="2" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Ranura 2 (Pista Central - Voicemeeter Bus) -->
+  <rect x="47" y="32" width="6" height="34" rx="3" fill="#090D16"/>
+  <!-- Perilla / Fader 2 3D -->
+  <rect x="44" y="36" width="12" height="12" rx="3" fill="url(#faderGrad2)"/>
+  <rect x="45" y="41" width="10" height="2" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Ranura 3 (Pista Derecha) -->
+  <rect x="66" y="32" width="6" height="34" rx="3" fill="#090D16"/>
+  <!-- Perilla / Fader 3 3D -->
+  <rect x="63" y="50" width="12" height="12" rx="3" fill="url(#faderGrad1)"/>
+  <rect x="64" y="55" width="10" height="2" fill="#FFFFFF" opacity="0.9"/>
+
+  <!-- Luces VU Meter Superiores (LEDs de Nivel Impecable) -->
+  <circle cx="28" cy="27" r="2" fill="#10B981"/>
+  <circle cx="34" cy="27" r="2" fill="#10B981"/>
+  <circle cx="47" cy="27" r="2" fill="#06B6D4"/>
+  <circle cx="53" cy="27" r="2" fill="#8B5CF6"/>
+  <circle cx="66" cy="27" r="2" fill="#10B981"/>
+  <circle cx="72" cy="27" r="2" fill="#F59E0B"/>
+</svg>
+

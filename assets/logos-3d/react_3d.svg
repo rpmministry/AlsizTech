@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="reactSphere" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#A5F3FC"/>
+      <stop offset="65%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </radialGradient>
+    <radialGradient id="reShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CFFAFE"/><stop offset="50%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="104" rx="44" ry="11" fill="url(#reShadow)"/>
+  <!-- Back of Orbit Rings with volumetric blur -->
+  <ellipse cx="60" cy="58" rx="44" ry="16" fill="none" stroke="url(#ringGrad)" stroke-width="5" transform="rotate(30, 60, 58)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.25))"/>
+  <ellipse cx="60" cy="58" rx="44" ry="16" fill="none" stroke="url(#ringGrad)" stroke-width="5" transform="rotate(90, 60, 58)" opacity="0.9"/>
+  <ellipse cx="60" cy="58" rx="44" ry="16" fill="none" stroke="url(#ringGrad)" stroke-width="5" transform="rotate(150, 60, 58)" opacity="0.95"/>
+  <!-- Central 3D Volumetric Sphere -->
+  <circle cx="60" cy="58" r="13" fill="url(#reactSphere)" filter="drop-shadow(0 6px 12px rgba(6,182,212,0.6))"/>
+  <circle cx="56" cy="54" r="3.5" fill="#FFFFFF" opacity="0.9"/>
+</svg>

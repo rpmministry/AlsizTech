@@ -1,0 +1,24 @@
+{
+  "name": "alsiztech-landing",
+  "version": "1.0.0",
+  "description": "AlsizTech Landing Page & Hub Corporativo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "sync": "node sync.js",
+    "deploy": "node deploy.js",
+    "deploy:vercel": "node deploy.js --vercel",
+    "deploy:ftp": "node deploy.js --ftp",
+    "deploy:git": "node deploy.js --git"
+  },
+  "keywords": [
+    "alsiztech",
+    "landing-page",
+    "software-development",
+    "mobile-apps"
+  ],
+  "author": "AlsizTech",
+  "license": "UNLICENSED"
+}
+

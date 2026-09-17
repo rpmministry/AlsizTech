@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ltShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="40%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="goldKeyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#EAB308"/>
+      <stop offset="100%" stop-color="#A16207"/>
+    </linearGradient>
+  </defs>
+  <!-- 3D Shadow -->
+  <ellipse cx="60" cy="104" rx="46" ry="11" fill="url(#ltShadow)"/>
+  
+  <!-- 3D Extruded Shield Base -->
+  <path d="M 60 16 L 94 28 C 94 62 80 84 60 94 C 40 84 26 62 26 28 Z" fill="#0F172A" transform="translate(0, 6)" opacity="0.4"/>
+  
+  <!-- Main 3D Volumetric Shield Body -->
+  <path d="M 60 14 L 94 26 C 94 60 80 82 60 92 C 40 82 26 60 26 26 Z" fill="url(#shieldGrad)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" filter="drop-shadow(0 6px 12px rgba(37,99,235,0.35))"/>
+  
+  <!-- Left Bevel Highlight -->
+  <path d="M 60 14 L 26 26 C 26 60 40 82 60 92 Z" fill="rgba(255,255,255,0.12)"/>
+  
+  <!-- 3D Golden Scale / Keyhole of Protection -->
+  <!-- Padlock / Legal Tech Crest -->
+  <rect x="47" y="46" width="26" height="22" rx="4" fill="url(#goldKeyGrad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.3))"/>
+  <path d="M 52 46 L 52 38 C 52 33.5 55.5 30 60 30 C 64.5 30 68 33.5 68 38 L 68 46" fill="none" stroke="url(#goldKeyGrad)" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="60" cy="55" r="2.5" fill="#1E293B"/>
+  <path d="M 59 56 L 61 56 L 61.5 62 L 58.5 62 Z" fill="#1E293B"/>
+  
+  <!-- Specular Shield Edge -->
+  <path d="M 60 16 L 92 27" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+
