@@ -6,5 +6,6 @@ deployment:
     - /bin/cp -f dark.html $DEPLOYPATH
     - /bin/cp -f styles.css $DEPLOYPATH
     - /bin/cp -f script.js $DEPLOYPATH
+    - /bin/cp -f .htaccess $DEPLOYPATH
     - /bin/cp -R -f assets $DEPLOYPATH
 
